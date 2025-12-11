@@ -1,35 +1,35 @@
 <script lang="ts">
-    // Using a placeholder image that resembles the metallic structure in the screenshot
-    const bgImage = "https://images.unsplash.com/photo-1541873676-a18131494184?q=80&w=2818&auto=format&fit=crop";
+    const bgImage = "/generated/image-private-equity-professionals-in-a-modern-1765456499944-0.webp";
 </script>
 
 <section class="relative h-screen w-full overflow-hidden bg-black text-white">
     <!-- Background Image -->
     <div class="absolute inset-0">
-        <img src={bgImage} alt="Space Station Interior" class="w-full h-full object-cover opacity-80" />
+        <img src={bgImage} alt="Private equity professionals analyzing investment data" class="w-full h-full object-cover opacity-70" />
         <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/50"></div>
     </div>
 
     <!-- Content -->
     <div class="relative z-10 h-full flex flex-col justify-end px-6 pb-20 md:px-12 md:pb-32 max-w-[1400px] mx-auto">
-        <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[0.95] tracking-tight max-w-4xl mb-12">
-            Building<br />
-            next-generation<br />
-            space stations
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[0.95] tracking-tight max-w-4xl mb-8">
+            Investment<br />
+            decisions<br />
+            in days, not weeks
         </h1>
+        
+        <p class="text-lg md:text-xl text-gray-300 max-w-2xl mb-12 leading-relaxed">
+            AI-moderated interviews that deliver investor-grade diligence at a fraction of traditional consulting costs
+        </p>
 
-        <!-- Video Controls -->
+        <!-- CTA -->
         <div class="flex items-center gap-4">
-            <button class="w-10 h-10 border border-white/30 flex items-center justify-center hover:bg-white/10 transition-colors" aria-label="Pause video">
-                <div class="flex gap-1">
-                    <div class="w-0.5 h-3 bg-white"></div>
-                    <div class="w-0.5 h-3 bg-white"></div>
-                </div>
-            </button>
-            <a href="#" class="flex items-center gap-2 text-sm font-medium hover:opacity-70 transition-opacity group">
+            <a href="#demo" class="bg-white text-black px-8 py-4 text-sm font-semibold uppercase tracking-wide hover:bg-gray-200 transition-colors">
+                Schedule Demo
+            </a>
+            <a href="#how-it-works" class="flex items-center gap-2 text-sm font-medium hover:opacity-70 transition-opacity group">
                 <span class="text-xs group-hover:translate-x-1 transition-transform duration-300">›</span>
-                Watch full video
+                Learn how it works
             </a>
         </div>
     </div>

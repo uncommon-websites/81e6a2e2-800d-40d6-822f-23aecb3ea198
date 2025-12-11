@@ -1,60 +1,55 @@
-<section class="relative bg-[#FFFCF9] py-32 px-6 md:px-12 overflow-hidden min-h-screen flex flex-col justify-between">
-    <div class="max-w-[1400px] mx-auto w-full h-full relative z-10 flex flex-col justify-between min-h-[80vh]">
-        <!-- Top Info -->
-        <div class="flex justify-between items-start w-full relative z-20">
-            <div class="flex flex-col">
-                <span class="text-[10px] font-mono font-bold tracking-widest text-gray-900 uppercase">Haven-1</span>
-                <span class="text-[10px] font-mono font-bold tracking-widest text-[#FF4D00] mt-2 uppercase">Launching 2025</span>
+<script lang="ts">
+    const testimonialImage = "/generated/image-confident-business-executive-in-professi-1765456505662-2.webp";
+</script>
+
+<section id="how-it-works" class="relative bg-white py-32 px-6 md:px-12 overflow-hidden">
+    <div class="max-w-[1400px] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left: Image -->
+            <div class="relative aspect-[3/4] bg-gray-100 overflow-hidden">
+                <img src={testimonialImage} alt="PE Managing Director" class="w-full h-full object-cover" />
             </div>
 
-            <div class="text-right hidden md:block">
-                <div class="grid grid-cols-[auto_auto] gap-x-8 gap-y-1 text-[10px] font-mono text-gray-500 uppercase tracking-widest">
-                    <span class="text-gray-400">Crew:</span> <span class="text-gray-900">4</span>
-                    <span class="text-gray-400">Height:</span> <span class="text-gray-900">10.1 m</span>
-                    <span class="text-gray-400">Habitable Volume:</span> <span class="text-gray-900">45 m³</span>
-                    <span class="text-gray-400">Pressurized Volume:</span> <span class="text-gray-900">70 m³</span>
-                    <span class="text-gray-400">Mass:</span> <span class="text-gray-900">14,000 kg</span>
-                    <span class="text-gray-400">Power:</span> <span class="text-gray-900">15,000 w</span>
-                    <span class="text-gray-400">Orbit:</span> <span class="text-gray-900">51.6°, 425 km</span>
+            <!-- Right: Content -->
+            <div class="flex flex-col justify-center">
+                <div class="mb-8">
+                    <span class="text-[10px] font-mono font-bold tracking-widest text-gray-500 uppercase">Client Testimonial</span>
                 </div>
-            </div>
-        </div>
 
-        <!-- Center Graphic -->
-        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <!-- Large Watermark Text -->
-            <h1 class="text-[18vw] font-bold text-[#F0EFEA] tracking-tighter select-none leading-none text-center z-0">
-                Haven-1
-            </h1>
-            
-            <!-- Circular Gauge SVG -->
-            <div class="absolute inset-0 flex items-center justify-center z-10">
-                <svg viewBox="0 0 200 200" class="w-[90vw] h-[90vw] md:w-[45vw] md:h-[45vw]">
-                    <!-- Ticks -->
-                    {#each Array(180) as _, i}
-                        <line 
-                            x1="100" y1="20" 
-                            x2="100" y2={i % 10 === 0 ? "28" : "24"} 
-                            stroke={i === 0 ? "#FF4D00" : "#E5E5E5"} 
-                            stroke-width={i === 0 ? "1" : "0.5"}
-                            transform="rotate({i * 2} 100 100)"
-                        />
-                    {/each}
-                    <!-- Top Orange Indicator Line -->
-                     <line x1="100" y1="10" x2="100" y2="35" stroke="#FF4D00" stroke-width="1" />
-                </svg>
-            </div>
-        </div>
+                <blockquote class="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.2] tracking-tight mb-8 text-gray-900">
+                    "80% of the insight at 5% of the cost, delivered in days, not weeks. It's a no-brainer for early-stage CDD and lets us widen and sharpen the very top of our deal funnel."
+                </blockquote>
 
-        <!-- Bottom Info -->
-        <div class="w-full relative z-20 mt-auto">
-            <h3 class="text-2xl md:text-3xl font-medium max-w-xs mb-8 text-gray-900 leading-tight">
-                The world’s first commercial space station
-            </h3>
-            <a href="#" class="inline-flex items-center gap-2 text-sm font-medium hover:opacity-70 transition-opacity group text-gray-900">
-                <span class="text-xs group-hover:translate-x-1 transition-transform duration-300">›</span>
-                Learn more
-            </a>
+                <div class="mb-12">
+                    <p class="text-sm font-semibold text-gray-900">Managing Director</p>
+                    <p class="text-sm text-gray-600">Mega Cap Private Equity Fund</p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-2 gap-8 border-t border-gray-200 pt-8">
+                    <div>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">120+</div>
+                        <div class="text-sm text-gray-600 uppercase tracking-wider">Interviews in one week</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">5%</div>
+                        <div class="text-sm text-gray-600 uppercase tracking-wider">Of traditional cost</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">Days</div>
+                        <div class="text-sm text-gray-600 uppercase tracking-wider">Not weeks</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">80%</div>
+                        <div class="text-sm text-gray-600 uppercase tracking-wider">Of traditional insight</div>
+                    </div>
+                </div>
+
+                <a href="#case-studies" class="inline-flex items-center gap-2 mt-12 text-sm font-medium hover:opacity-70 transition-opacity group text-gray-900">
+                    <span class="text-xs group-hover:translate-x-1 transition-transform duration-300">›</span>
+                    View case studies
+                </a>
+            </div>
         </div>
     </div>
 </section>

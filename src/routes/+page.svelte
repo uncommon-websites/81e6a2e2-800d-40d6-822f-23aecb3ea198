@@ -5,6 +5,8 @@
     import HavenDemo from "$lib/components/HavenDemo.svelte";
     import HavenOne from "$lib/components/HavenOne.svelte";
     import ProgressCarousel from "$lib/components/ProgressCarousel.svelte";
+    import CTA from "$lib/components/CTA.svelte";
+    import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <main class="w-full min-h-screen bg-white">
@@ -14,5 +16,7 @@
     <HavenDemo />
     <HavenOne />
     <ProgressCarousel />
+    <CTA />
+    <Footer />
 </main>
 
